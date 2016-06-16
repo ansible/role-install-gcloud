@@ -1,0 +1,23 @@
+---
+# defaults file for role-install-gcloud
+
+gcloud_archive_name: ''                # Example: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz. If present, the archive will be downloaded. 
+                                       # See https://cloud.google.com/sdk/ to find the archive name you need. 
+gcloud_tmp_path: /tmp/install_gcloud   # Path where the downloaded archive can be temporarily placed
+gcloud_force_download: yes             # When downloading the archive, always download the archive, even if it already exists in the temp path.
+
+gcloud_archive_path: ''                        # Path to the gcloud archive file on the Ansible controller. 
+                                               # If present archive will be copied, not downloaded.
+
+gcloud_install_path: "{{ ansible_env.HOME }}"  # Path on target node where the unarchived files should land.
+
+gcloud_usage_reporting: no        # Enable usage reporting?
+gcloud_profile_path: ''           # Path to the user profile login script. Optional.
+gcloud_command_completion: yes    # Enable bash style command completion in the login script?
+gcloud_update_path: yes           # Update the PATH when when modifying user's login script.
+gcloud_override_components: []    # Override the components that would be installed by default, and install these instead. 
+
+gcloud_additional_components: [kubectl]  # Additional components to install by default. Will either be added to the default install
+                                         # list, or to the override-components (if provided) 
+gcloud_debug: yes 
+

@@ -1,0 +1,4 @@
+---
+# vars file for role-install-gcloud
+
+gcloud_archive_url: "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads"

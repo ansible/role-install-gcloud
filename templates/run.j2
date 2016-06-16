@@ -1,0 +1,3 @@
+#!/bin/bash
+
+{{ gcloud_install_path }}/google-cloud-sdk/install.sh --quiet --usage-reporting {{ gcloud_usage_reporting | lower }} {% if gcloud_profile_path %}--rc-path {{ gcloud_profile_path }} {% endif %} --command-completion {{ gcloud_command_completion | lower }} --path-update {{ gcloud_update_path | lower }} {% if gcloud_override_components | length > 0 %}--override-components {% for component in gcloud_override_components %}{{ component }}{% if loop.index < gcloud_override_components | length  %} {% endif %}{% endfor %} {% endif %}{% if gcloud_additional_components | length > 0 %}--additional-components {% for component in gcloud_additional_components %}{{ component }}{% if loop.index < gcloud_additional_components | length %} {% endif %}{% endfor %}{% endif %}
