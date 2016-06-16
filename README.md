@@ -1,9 +1,9 @@
 Install gcloud 
 ==============
 
-Use to install the Google Cloud SDK and its components, including Kubectl. If you're deploying
-things to Kubernetes, this role is for you, as it will automate the installion of kubectl on your
-development and deployment hosts.
+Use to install the Google Cloud SDK and its components, including Kubernetes' kubectl CLI. If you're deploying
+things to Kubernetes, this role is for you, as it will automate the install of the CLI on your development and 
+deployment hosts.
 
 Determine which Archive to Install
 ----------------------------------
