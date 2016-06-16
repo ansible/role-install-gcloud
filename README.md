@@ -97,13 +97,13 @@ gcloud_command_completion
 > Defaults to yes. Enable bash style command completion in the login script?
 
 gcloud_update_path
-> Defaults to yes. Update the PATH environment varialbe within the login script.
+> Defaults to yes. Update the PATH environment varialbe within the login script?
 
 gcloud_override_components
 > Defaults to []. Override the components to be installed, and install these instead. 
 
 gcloud_additional_components
-> Defaults to [kubectl]. Additional components to install. Will either be added to the default install list, or to the override-components (if provided). 
+> Defaults to [kubectl]. Additional components to install. Will either be added to the default install list, or to the override-components list (if provided). 
 
 Example Playbook
 ----------------
