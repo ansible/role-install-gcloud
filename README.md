@@ -42,7 +42,7 @@ Use the Component ID value in *gcloud_additional_components* and *glcoud_overrid
 control which components will be installed.
 
 Component Name | Component ID | Size
---- | --- | ---:
+--- | --- | --- | ---:
 Cloud Datastore Emulator │ cloud-datastore-emulator │ 15.9 MiB
 Cloud Datastore Emulator (Legacy) │ gcd-emulator │ 38.1 MiB
 Cloud Pub/Sub Emulator │ pubsub-emulator │ 10.8 MiB
@@ -53,7 +53,7 @@ gcloud app PHP Extensions (Mac OS X) │ app-engine-php-darwin │ 21.9 MiB
 gcloud app Python Extensions │ app-engine-python │ 7.2 MiB
 BigQuery Command Line Tool │ bq │ < 1 MiB
 Cloud SDK Core Libraries │ core │ 4.1 MiB
-Cloud Storage Command Line Tool │ gsutil │   2.6 MiB
+Cloud Storage Command Line Tool │ gsutil │ 2.6 MiB
 Default set of gcloud commands │ gcloud |  
 kubectl │ kubectl │ 8.1 MiB
 
