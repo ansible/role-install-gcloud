@@ -110,7 +110,7 @@ Example Playbook
 
 Here's an example playbook that executes our role:
 
-    - name: Install kubectl 
+    - name: Create temp intall path 
       hosts: localhost
       connection: local
       gather_facts: no
@@ -131,7 +131,7 @@ Here's an example playbook that executes our role:
           gcloud_tmp_path: /tmp/install_gcloud 
           gcloud_archive_name: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz
 
-    - name: Remove the temp path
+    - name: Remove temp install path
       hosts: localhost
       connection: local
       gather_facts: no
