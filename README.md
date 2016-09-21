@@ -127,7 +127,6 @@ Here's an example playbook that executes our role:
       gather_facts: yes    # Run gather_facts to define ansible_env.HOME
       roles:
         - role: role-install-gcloud
-          tags: ['download']
           gcloud_tmp_path: /tmp/install_gcloud 
           gcloud_archive_name: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz
 
