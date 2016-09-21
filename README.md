@@ -27,12 +27,12 @@ Where are components installed?
 -------------------------------
 
 The Google installer does not attempt to link or copy executables to /usr/local/bin or a 
-bin directory that is typically be part of the environment PATH. Instead the component 
+bin directory that is typically part of the environment PATH. Instead the component 
 executables live in {{ gcloud_install_path }}/bin. If you want to add links or copy files to a bin 
 directory, add additional tasks to your playbook post role execution. 
 
 The install process will update a login script to add {{ gcloud_install_path }}/bin to the 
-environment PATH. If you want this behaviour, leave *gcloud_update_path* to true. The installer 
+environment PATH. If you want this behavior, leave *gcloud_update_path* to true. The installer 
 will attempt to update the default login script for the user. To update a specific script, set the
 value of *gcloud_profile_path*.
 
@@ -71,12 +71,12 @@ the outside world.
 Role Variables
 --------------
 gcloud_archive_name
-> Defaults to ''. If set, the archive will be downloaded from https://dl.google.com/dl/cloudsdk/channels/rapid/downloads
-> onto the target host. Set to the name of an archive file. Example: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz. 
+> Defaults to ''. If set, the archive will be downloaded from Google onto the target host. Set to the name of 
+> an archive file. Example: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz. 
 > Visit [the SDK site](https://cloud.google.com/sdk/) to find the archive name for your system. 
 
 gcloud_archive_path
-> Defaults to ''. Path to the gcloud archive file on the Ansible host. If defined, the archive will be copied to the target node. 
+> Defaults to ''. Path to the gcloud archive file on the Ansible host. If defined, the archive will be copied to the target host. 
 
 gcloud_tmp_path
 > Defaults to /tmp. Set to the path where the archive can be temporarily placed.
