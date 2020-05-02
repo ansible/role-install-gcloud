@@ -9,7 +9,7 @@ Determine which Archive to Install
 ----------------------------------
 
 The name of the archive to install must be determined prior to running this role. 
-Unfortunately there is no automated way to determine the archive name. You cannot nstall 
+Unfortunately there is no automated way to determine the archive name. You cannot install 
 the SDK via the typical package managers. Instead, go to [the SDK web site](https://cloud.google.com/sdk/) 
 and find the archive that fits your system. Once you have the archive name, plug it 
 into this role. 
