@@ -110,7 +110,7 @@ Example Playbook
 
 Here's an example playbook that executes our role:
 
-    - name: Create temp intall path 
+    - name: Create temp install path 
       hosts: localhost
       connection: local
       gather_facts: no
