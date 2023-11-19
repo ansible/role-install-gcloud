@@ -13,7 +13,7 @@
         url: "{{ gcloud_archive_url }}/{{ gcloud_archive_name }}"
         dest: "{{ gcloud_tmp_path }}/{{ gcloud_archive_name }}"
         force: "{{ gcloud_force_download }}"
-    - set_fact: 
+    - set_fact:
         gcloud_archive_path: "{{ gcloud_tmp_path }}/{{ gcloud_archive_name }}"
 
     #
@@ -50,6 +50,27 @@
 
     - name: Install
       command: "{{ gcloud_tmp_path }}/run_install.sh"
+
+    - name: Add configuration directory
+      file:
+          path: "{{ gcloud_install_path }}/.config"
+          state: directory
+          mode: 0755
+    - name: Add configuration directory
+      file:
+          path: "{{ gcloud_install_path }}/.config/gcloud"
+          state: directory
+          mode: 0755
+    - name: Add configuration directory
+      file:
+          path: "{{ gcloud_install_path }}/.config/gcloud/configurations"
+          state: directory
+          mode: 0755
+    - name: Put in default config (not sure we can do the auth...)
+      template:
+        src: "default_config.j2"
+        dest: "{{ gcloud_install_path }}/.config/gcloud/configurations/config_default"
+        mode: 0644
 
     - name: Remove the archive
       file:

@@ -1,7 +1,7 @@
 ---
 # defaults file for role-install-gcloud
 
-gcloud_archive_name: 'google-cloud-sdk-257.0.0-linux-x86_64.tar.gz'                # Example: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz. If present, the archive will be downloaded.
+gcloud_archive_name: 'google-cloud-sdk-455.0.0-linux-x86_64.tar.gz'                # Example: google-cloud-sdk-114.0.0-darwin-x86_64.tar.gz. If present, the archive will be downloaded.
                                        # See https://cloud.google.com/sdk/ to find the archive name you need.
 gcloud_tmp_path: /tmp/install_gcloud   # Path where the downloaded archive can be temporarily placed
 gcloud_force_download: yes             # When downloading the archive, always download the archive, even if it already exists in the temp path.
